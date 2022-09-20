@@ -30,8 +30,8 @@ console.log(5 > 2 || 7 > 8)
 
 //console.log(!resultado) // ! trasforma o valor em diferente do real 
 
-const logado    =   false
-if(!logado){ 
+const logado = false
+if (!logado) {
     console.log('Você nao esta logado')
 }
 
