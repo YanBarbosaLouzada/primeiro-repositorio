@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numero = []
+        for(let i = 0; i<10 ;i++){
+            numero [i] = parseInt(prompt('Escreva dez numeros reais!'))
+        }
+
+        let positivo = numero.length;
+        for (let i = 0; i < numero.length; i++) {
+            if (numero[i] > 0) {
+                 positivo = numero[i];   
+            }
+            alert('Esses sao seus numeros positivos  '+positivo)
+        }
+          let Negativo = numero.length;
+        for (let i = 0; i < numero.length; i++) {
+            if (numero[i] < 0) {
+                 Negativo = numero[i];
+          }
+          alert('Esses sao seus numeros negativos'+Negativo)
+        }
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Faça um algoritmo para adicionar 20 valores em um array e depois imprima-os no HTML. Evite que o array possua valores duplicados.
+
+        const arr =[]
+
+        for(i=0; i<5; i++){
+            let numeros_informados = prompt('Digite vinte numeros!') 
+            arr[i] =  numeros_informados 
+            console.log(arr)
+            for(j = 0; j < i; j++){
+                if(numeros_informados == arr[j]){
+                 alert('Escreva numeros diferentes um do outro.... NAO OS REPITA!')
+                i--
+
+            }
+
+            }
+        }
+         
+        
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

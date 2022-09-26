@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele informe
+o preço de cada produto. Ao recuperar possuir o  valor de cada produto, faça a soma total da compra e
+informe o maior e o menor preço que foi informado.*/
+
+
+        const quantindade_produtos = parseInt(prompt('Informe a quanditade de produtos '))
+
+        //ler o preço de cada produto e armazenar em um array
+
+        const preco_produto = []
+
+        for (let i = 0; i < quantindade_produtos; i++) {
+            let preco = parseFloat(prompt('Informe o valor do produto!'))
+            preco_produto[i] = preco
+        }
+
+        // length quantidade de valores que existe dentro do array
+
+
+        let soma = 0
+        /*for (let i = 0; i < preco_produto.length; i++) {
+            const valor = preco_produto[i]
+            soma = soma + valor
+        }*/
+
+
+        // Codigo para percorrer array 
+        for (let preco of preco_produto) {
+            soma = soma + preco
+
+        }
+
+        alert('O preço final a pagar é de ' + soma)
+
+        let maior = 0;
+        for (let i = 0; i < preco_produto.length; i++) {
+            if (preco_produto[i] > maior) {
+                maior = preco_produto[i];
+            }
+        }
+         alert('O maior preço informado foi: ' + maior)
+        let menor = Infinity;
+        for (let i = 0; i < preco_produto.length; i++) {
+            if (menor > preco_produto[i]  ) {
+                menor = preco_produto[i];
+            }
+        }
+        alert('O Menor preço informado foi: ' + menor)
+
+    </script>
+</body>
+
+</html>
