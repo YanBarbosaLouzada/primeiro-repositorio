@@ -23,7 +23,8 @@ informe o maior e o menor preço que foi informado.*/
 
         for (let i = 0; i < quantindade_produtos; i++) {
             let preco = parseFloat(prompt('Informe o valor do produto!'))
-            preco_produto[i] = preco
+            // preco_produto[i] = preco
+            preco_produto.push(preco) //Pega um valor e adiciona o valor no final de seu arrey.
         }
 
         // length quantidade de valores que existe dentro do array
@@ -50,10 +51,10 @@ informe o maior e o menor preço que foi informado.*/
                 maior = preco_produto[i];
             }
         }
-         alert('O maior preço informado foi: ' + maior)
+        alert('O maior preço informado foi: ' + maior)
         let menor = Infinity;
         for (let i = 0; i < preco_produto.length; i++) {
-            if (menor > preco_produto[i]  ) {
+            if (menor > preco_produto[i]) {
                 menor = preco_produto[i];
             }
         }

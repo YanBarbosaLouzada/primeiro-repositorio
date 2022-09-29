@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+function pulaLinha() {
+
+    document.write("<br>")
+}
+
+function mostra(texto) {
+
+    document.write(texto);
+    pulaLinha();
+}
+
+
+function calculaDelta (n1, n2, n3) {
+
+    var delta = (n2 * n2) - (4*n1*n3)
+    return delta
+}
+
+function calculaEquaçãoPositiva (n1, n2) {
+
+    var x = ((-n2) + Math.sqrt(delta)) / (2 * n1)
+    return x
+
+}
+
+function calculaEquaçãoNegativa (n1, n2) {
+
+    var x = ((-n2) - Math.sqrt(delta)) / (2 * n1)
+
+    return x
+
+}
+var a = 1
+var b = -1    
+var c = -12
+
+var delta = calculaDelta (a, b, c);
+var resultado1 = Math.round(calculaEquaçãoPositiva(a, b));
+var resultado2 = Math.round(calculaEquaçãoNegativa(a, b));
+
+
+mostra("delta é " + delta);
+mostra("resultado é x¹ = " + resultado1 + " ou x² =  " + resultado2);
+
+</script>
+      
+</body>
+</html>

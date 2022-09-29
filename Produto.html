@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p></p>
+
+<body>
+    <img src="" alt="">
+    <script>
+        let ff = 15
+
+        let produtos = {
+
+            nome: [],
+            marca: [],
+            foto: [],
+            preco: [],
+            quantidade: [],
+
+        }
+        for (j = 0; j < ff; j++) {
+            produtos.nome.push(prompt(`Digite o nome do ${j + 1}° produto: `))
+            produtos.preco.push(prompt(`Digite o preço do ${j + 1}° produto: `))
+            produtos.marca.push(prompt(`Digite a marca do ${j + 1}°produto: `))
+            produtos.foto.push(prompt(`Digite o link da ${j + 1}°imagem do produto: `))
+            produtos.quantidade.push(prompt(`Digite a quantidade em estoque do ${j + 1}°: `))
+
+            
+            document.write(`<p> 
+        Imagem: <img src=${produtos.foto[j]} alt='produto' width=100 height=200></img><br>
+
+        Nome:   ${produtos.nome[j]} <br>
+
+        Marca:  ${produtos.marca[j]}  <br>
+
+        Preço:  ${produtos.preco[j]} <br>
+
+        Quantidade Estoque:${produtos.quantidade[j]} <br>
+
+        O Preço Total do estoque é: ${ produtos.quantidade[j] * produtos.preco[j]}
+
+        </p>`)
+
+        }
+
+
+    </script>
+</body>
+
+</html>

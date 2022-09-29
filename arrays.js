@@ -16,7 +16,7 @@
  * -> A primeira posição de um Array é a posição é 0
  */
 
-let arr = new Array(10, 15, 9.8, 'Eu sou um texto dentro de um array', 'Olá mundo', true, false, false)
+/*let arr = new Array(10, 15, 9.8, 'Eu sou um texto dentro de um array', 'Olá mundo', true, false, false)
 console.log(arr)
 
 //pega so um valor dentro do array
@@ -27,11 +27,31 @@ console.log(arr[4])
 
 arr[6] = 'outro texto'
 console.log(arr[6])
-console.log(arr)
+console.log(arr)*/
 
 /*Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele informe
 o preço de cada produto. Ao recuperar possuir o valor de cada produto, faça a soma total da compra e
 informe o maior e o menor preço que foi informado.*/
+
+const lista = ['Joao', 'maria', 'paulo', 'pedro', 'vitoria', 'Augusto', 'larissa']
+lista.push('Roberta')                        //fim da lista
+console.log(lista)
+lista.unshift('Gustavo')                     //incio da lista
+console.log(lista)
+lista.pop('Roberta')                         //remove o ultimo nome
+console.log(lista)
+lista.shift('Gustavo')                       //remove o primeiro valor 
+console.log(lista)
+console.log(lista.concat('Julio'))           //coloca aquele valor no final da lista e cria uma nova lista
+console.log(lista.join('-> '))               // João -> maria -> .....
+
+
+
+
+
+
+
+
 
 
 
